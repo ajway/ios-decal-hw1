@@ -22,7 +22,7 @@ class Words {
 //: ### variables the same type? If not, why?
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: Yes, they are both String types.
 
 
 //: ## Q2: Variable Types and Function Types
@@ -30,7 +30,7 @@ class Words {
         let reversedWords = words.map() {String($0.characters.reverse())}
         var numElements = words.count
         
-        for let i = 0; i < numElements; i++ {
+        for var i = 0; i < numElements; i++ {
             if words[i] != reversedWords[i] {
                 return false
             }
@@ -41,13 +41,13 @@ class Words {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: The i should not be 'let', because 'let' is only for constants. 'var' is the proper type.
 
 
 //: ## Q3: More Functions and Object Initialization
-    class func isAnagram() -> Bool {
+    static func isAnagram() -> Bool {
         var countLetters : [Character : Int]
-        var lenA = self.wordA.characters.count
+        var lenA = Words.wordA.characters.count
         var lenB = self.wordB.characters.count
         
         if lenA != lenB {
@@ -89,7 +89,7 @@ class Words {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: 
     
     
 }
