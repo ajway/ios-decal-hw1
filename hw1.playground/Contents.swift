@@ -90,7 +90,7 @@ class Words {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: 
+//: countLetters was never declared properly. The code also never returned true at the end. It should have returned true instead of nil.
     
     
 }
